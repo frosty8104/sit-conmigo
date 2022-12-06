@@ -13,10 +13,11 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding: 5% 0 5% 0;
   width: 100%;
 }
 ul {
-  list-style-type: none;
+  list-style: none;
 }
 a {
   font-size: 1em;
@@ -35,7 +36,13 @@ h2 {
 /***** HEADER/FOOTER *****/
 header {
   background: #fcd0c0;
-  padding: 10% 0 10% 0;
+}
+#home {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 90%;
 }
 nav {
   align-items: center;
@@ -43,18 +50,14 @@ nav {
   flex-flow: row wrap;
   justify-content: center;
   padding: 0 0 5% 0;
-  width: 85%;
+  width: 60%;
 }
-/* .topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-} */
 nav ul {
+  padding: 0;
   width: auto;
 }
 nav ul li {
-  display: none;
+  display: inline-block;
 }
 nav ul li a {
   color: #213657;
@@ -62,39 +65,6 @@ nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* .topnav #myLinks {
-  display: none;
-} */
-nav a.icon {
-  background: #fcd0c0;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-/* .topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-} */
-nav a:hover {
-  background-color: #fcd0c0;
-  color: #3cbb4f;
-}
-/* .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-} */
-.active {
-  background-color: #fcd0c0;
-  color: #000;
-}
-/* .active {
-  background-color: #04AA6D;
-  color: white;
-} */
 header h1 {
   align-items: center;
   color: #3cbb4f;
@@ -138,64 +108,98 @@ header h2 {
 }
 footer {
   background: #d5f9de;
-  padding: 10% 0 10% 0;
+  padding: 5% 0 5% 0;
 }
 #contact {
-  width: 90%;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 #contact h2 {
   color: #3cbb4f;
-  padding: 0 0 2% 0;
+  font-size: 1em;
+  font-weight: bold;
+  width: 90%;
 }
 #contact p {
   color: #213657;
+  font-size: 1em;
+  width: 90%;
 }
 #contact img {
-  width: 45%;
+  width: 90%;
 }
 img {
   width: 100%;
 }
 #contact ul {
-
+  width: 90%;
 }
 #contact ul li {
-  color: #213657;
+  display: inline-block;
 }
-#contact ul li a {
+#contact ul li i {
+  color: #213657;
+  font-size: 2em;
   text-decoration: none;
 }
 /***** PRODUCTS *****/
 main {
   background: #d5f9de;
+  padding: 5% 0 5% 0;
 }
 #products {
-  padding: 10% 0 10% 0;
-  width: 90%;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 0 5% 0;
 }
 #products h2 {
   color: #3cbb4f;
-  padding: 0 0 2% 0;
-}
-#products img {
-  margin: 0 0 5% 0;
-}
-/***** ABOUT *****/
-#about {
-  padding: 10% 0 10% 0;
   width: 90%;
 }
-#about h2 {
-  color: #3cbb4f;
-  padding: 0 0 2% 0;
-}
-#about img {
+#products img {
+  padding: 2% 0 2% 0;
   width: 90%;
 }
 img {
   width: 100%;
 }
-#about p {
+/***** ABOUT *****/
+#about {
+  background: #fcd0c0;
+  padding: 5% 0 5% 0;
+  width: 100%;
+}
+.mission {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.mission h2 {
+  color: #3cbb4f;
+  font-size: 1em;
+  font-weight: bold;
+  width: 90%;
+}
+.mission img {
+  width: 90%;
+}
+img {
+  width: 100%;
+}
+.mission p {
   color: #213657;
   font-size: 1em;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1200px) {
+
 }
