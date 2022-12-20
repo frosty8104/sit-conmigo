@@ -24,7 +24,7 @@ h2, a, p {
   font-weight: bold;
 }
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 h2 {
   font-weight: bold;
@@ -40,46 +40,42 @@ header {
   justify-content: center;
   width: 90%;
 }
-nav {
+#home nav {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  padding: 0 0 5% 0;
+  justify-content: space-around;
   width: 60%;
 }
-nav ul {
-  padding: 0;
-  width: 100%;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  color: #213657;
+#home nav ul li {
   display: block;
+}
+#home nav ul li a {
+  color: #213657;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
-header h1 {
-  align-items: center;
+#home h1 {
   color: #3cbb4f;
-  display: flex;
-  flex-flow: row wrap;
   font-family: 'Macondo', cursive;
-  font-size: 3em;
-  justify-content: center;
-  padding: 0 15% 0 0;
-  width: 55%;
+  font-size: 2em;
 }
-header img {
-  margin: 0 0 0 10%;
+#home img {
+  padding: 0 2% 0 0;
   width: 5%;
 }
 img {
   width: 100%;
 }
-header button {
+#home form {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 90%;
+}
+#home button {
   align-items: center;
   background: #59e67e;
   border: none;
@@ -91,13 +87,14 @@ header button {
   justify-content: center;
   text-transform: uppercase;
   padding: 1% 0 1% 0;
-  width: 20%;
+  width: 50%;
 }
-header h2 {
+#home h2 {
   align-items: center;
   color: #213657;
   display: flex;
   flex-flow: row wrap;
+  font-size: 1em;
   font-weight: bold;
   justify-content: center;
   width: 90%;
@@ -130,6 +127,7 @@ img {
   width: 100%;
 }
 #contact ul {
+  padding: 0;
   width: 90%;
 }
 #contact ul li {
