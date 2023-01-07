@@ -45,11 +45,10 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  width: 80%;
+  width: 90%;
 }
 #home nav ul li {
-  display: inline-block;
-  padding: 0 0 0 5%;
+  display: block;
 }
 #home nav ul li a {
   color: #213657;
@@ -114,9 +113,8 @@ footer {
   width: 90%;
 }
 .info,
-.contact,
 .social {
-  width: 30%;
+  width: 45%;
 }
 .info h2,
 .social h2 {
@@ -128,29 +126,23 @@ footer {
   align-items: center;
   display: flex;
   justify-content: flex-end;
-  padding: 0 20% 0 0;
+  padding: 0 10% 0 0;
 }
-.contact p,
+.info p,
 .social ul {
   color: #213657;
   font-size: 1em;
-}
-.contact p {
-  padding: 35% 0 0 0;
-}
-img {
-  width: 100%;
 }
 .social ul {
   align-items: center;
   display: flex;
   justify-content: flex-end;
   padding: 0;
-  width: 90%;
+  width: 100%;
 }
 .social ul li {
   display: inline-block;
-  padding: 0 0 0 5%;
+  padding: 0 0 0 10%;
 }
 .social ul li i {
   color: #213657;
@@ -221,13 +213,15 @@ img {
   }
   /***** HEADER *****/
   #home nav {
-    width: 60%;
+    width: 80%;
   }
   #home nav ul {
     padding: 0;
+    width: 100%;
   }
   #home nav ul li {
     display: inline-block;
+    padding: 0 0 0 5%;
   }
   #home nav ul li a {
     font-size: 1.5em;
@@ -235,8 +229,11 @@ img {
   #home h1 {
     font-size: 5em;
   }
-  #home img {
+  .logo img {
     width: 4%;
+  }
+  img {
+    width: 100%;
   }
   #home button {
     align-items: center;
@@ -277,6 +274,7 @@ img {
   }
   .social ul li {
     display: inline-block;
+    padding: 0 0 0 5%;
   }
   .social ul li i {
     font-size: 2em;
@@ -287,7 +285,7 @@ img {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 0 0 3% 0;
+    padding: 0 0 5% 0;
     width: 90%;
   }
   .photos {
@@ -306,12 +304,23 @@ img {
     width: 100%;
   }
   /***** ABOUT *****/
+  .mission {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
   .mission h2 {
     font-size: 1.5em;
     font-weight: bold;
   }
+  .mission img {
+    width: 45%;
+  }
   .mission p {
     font-size: 1em;
+    padding: 0 0 0 4%;
+    width: 45%;
   }
 }
 /***** DESKTOP *****/
@@ -328,13 +337,14 @@ img {
   }
   /***** HEADER *****/
   #home nav {
-
+    width: 60%;
   }
   #home nav ul {
-    padding: 0;
+    padding: 0 0 0 20%;
+    width: 100%;
   }
   #home nav ul li {
-    display: inline-block;
+    padding: 0 0 0 2%;
   }
   #home nav ul li a {
     font-size: 2em;
@@ -371,6 +381,9 @@ img {
   .info p {
     font-size: 1.25em;
   }
+  .social h2{
+    padding: 0 20% 0 0;
+  }
   .social ul {
 
   }
@@ -385,14 +398,23 @@ img {
     font-size: 2em;
   }
   .photos .img {
-    width: 25%;
+
+    width: 23%;
   }
   /***** ABOUT *****/
   .mission h2 {
     font-size: 2em;
     font-weight: bold;
   }
+  .mission img {
+    width: 25%;
+  }
+  img {
+    width: 100%;
+  }
   .mission p {
     font-size: 1.25em;
+    padding: 0 0 0 2%;
+    width: 63%;
   }
 }
